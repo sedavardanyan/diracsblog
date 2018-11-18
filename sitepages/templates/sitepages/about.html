@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>About</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'home' %}">Dirac's Blog</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="nav navbar-nav">
+             <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="https://twitter.com/dirock02">Twitter</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   </nav>
+  <div class="container">
+    <h1 class="text-center">Welcome to Dirac's Blog!</h1>
+      <hr />
+      <h2>Brief information</h2>
+       {% load static %}
+        <img src="{% static 'sitepages/dirac.jpg' %}" class="img-responsive" style="max-height: 400px;" />
+      <hr />
+      <p>Paul Adrien Maurice Dirac ( 8 August 1902 – 20 October 1984) an English theoretical physicist who is regarded as one of the most significant physicists of the 20th century.
+
+Dirac made fundamental contributions to the early development of both quantum mechanics and quantum electrodynamics. Among other discoveries, he formulated the Dirac equation which describes the behaviour of fermions and predicted the existence of antimatter. Dirac shared the 1933 Nobel Prize in Physics with Erwin Schrödinger "for the discovery of new productive forms of atomic theory".[8] He also made significant contributions to the reconciliation of general relativity with quantum mechanics.
+
+Dirac was regarded by his friends and colleagues as unusual in character. In a 1926 letter to Paul Ehrenfest, Albert Einstein wrote of Dirac, "This balancing on the dizzying path between genius and madness is awful".[9]
+
+He was the Lucasian Professor of Mathematics at the University of Cambridge, a member of the Center for Theoretical Studies, University of Miami, and spent the last decade of his life at Florida State University.</p>
+    <h3>For more information <a href="https://en.wikipedia.org/wiki/Paul_Dirac">click here.</a></h3>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity=
+            "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
