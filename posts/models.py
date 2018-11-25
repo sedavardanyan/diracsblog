@@ -1,9 +1,10 @@
 from django.db import models
+from django.utils import timezone
 
 
 class Post(models.Model):
     title = models.CharField(max_length=250)
-    pub_date = models.DateTimeField()
+    pub_date = models.DateTimeField(default=timezone.now())
     image = models.ImageField(upload_to='media/')
     body = models.TextField()
 
